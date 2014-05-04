@@ -31,6 +31,8 @@ Ext.define("MyApp.store.TaskStore", {
         var dependencies = this.dependencyStore.getModifiedRecords();
         var tasks = this.getModifiedRecords();
 
+        console.log(this.dependencyStore);
+
         function extract(records) {
             var result = [];
 
@@ -49,7 +51,7 @@ Ext.define("MyApp.store.TaskStore", {
         };
 
         Ext.Ajax.request({
-            url      : this.url,
+            url      : "/gantt/save",
             method   : 'POST',
             jsonData : data,
 
