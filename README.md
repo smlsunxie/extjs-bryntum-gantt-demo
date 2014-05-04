@@ -1,2 +1,2 @@
-extjs-bryntum-gantt-demo
-========================
+# extjs-bryntum-gantt-demo
+### a Sails application
